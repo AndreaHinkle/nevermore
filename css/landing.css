@@ -1,0 +1,30 @@
+.header {
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.header img {
+
+}
+
+.hero {
+    
+}
+
+.email {
+    
+}
+
+.landing-thumb {
+    
+}
+
+.parent {
+  position: relative;
+  height: 250px;
+}
+
+.child {
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,54 @@
+body {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+h3.logo {
+    font-weight:700;
+    font-size: 3rem;
+    padding-left: 30px;
+    margin-top: -20px;
+}
+
+.name {
+    margin-top: 120px;
+    margin-left: -50px;
+}
+
+
+.links {
+  margin-top: 140px;  
+}
+
+
+.secondary {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.hint {
+    color: rgba(0, 0, 0, 0.38);
+}
+
+
+.header, .footer {
+background: #75DBDD;
+}
+
+.header a:link {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.header a:visited {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+button {
+    background-color: #FFEA65;
+    font-size: 18px;
+    letter-spacing: 1.28px;
+    line-height: 20px;
+    margin-left: 20px;
+}
