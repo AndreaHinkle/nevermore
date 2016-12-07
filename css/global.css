@@ -1,5 +1,7 @@
 body {
     color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
@@ -13,14 +15,13 @@ h3.logo {
     margin-top: -20px;
 }
 
-.name {
-    margin-top: 120px;
-    margin-left: -50px;
-}
 
-
-.links {
-  margin-top: 140px;  
+navigation {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    float: right;
+    position: absolute;
+    right: 0px;
 }
 
 
@@ -51,4 +52,9 @@ button {
     letter-spacing: 1.28px;
     line-height: 20px;
     margin-left: 20px;
+}
+
+.footer {
+    background-image: url(../images/FooterDesktop.png);
+    padding: 10px;
 }
