@@ -20,8 +20,12 @@ navigation {
     margin-top: 10px;
     margin-bottom: 30px;
     float: right;
-    position: absolute;
-    right: 0px;
+}
+
+.email form {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    float: right;
 }
 
 
