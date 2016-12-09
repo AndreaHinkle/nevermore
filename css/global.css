@@ -8,26 +8,6 @@ h1, h2 {
     font-family: 'Pacifico', cursive;
 }
 
-h3.logo {
-    font-weight:700;
-    font-size: 3rem;
-    padding-left: 30px;
-    margin-top: -20px;
-}
-
-
-navigation {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    float: right;
-}
-
-.email form {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    float: right;
-}
-
 
 .secondary {
     color: rgba(0, 0, 0, 0.54);
@@ -50,6 +30,27 @@ background: #75DBDD;
     color: rgba(255, 255, 255, 0.87);
 }
 
+.header {
+    height: 150px;
+
+}
+
+.header > :first-child {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+}
+
+.logo {
+    height: 150px;
+}
+
+navigation {
+padding-top: 20px;
+    float: right;
+}
+
 button {
     background-color: #FFEA65;
     font-size: 18px;
@@ -58,7 +59,44 @@ button {
     margin-left: 20px;
 }
 
-.footer {
-    background-image: url(../images/FooterDesktop.png);
+.button-header {
+    background-color: #FFEA65;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: -5px;
+    padding: 0px 10px;
+}
+
+.whitebg{
+    background-color: #ffffff;
+}
+
+.email {
+    background-image: 
+    linear-gradient(
+      rgba(250, 18, 155, 0.7),
+      rgba(250, 18, 155, 0.7)
+    ),
+    url(../images/feathers.png);
+     height: 150px;
     padding: 10px;
+}
+
+.email form {
+    margin: 0 auto;
+    white-space: nowrap   
+}
+
+.email p {
+    padding-bottom: -30px;
+    color: #ffffff;
+}
+
+.footer {
+    background-image:
+    linear-gradient(
+      rgba(117, 219, 221, 0.8),
+      rgba(117, 219, 221, 0.8)
+    ),
+    url(../images/feathers.png);
 }
