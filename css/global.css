@@ -35,20 +35,18 @@ background: #75DBDD;
 
 }
 
-.header > :first-child {
+.logo {
+    height: 150px;
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left;
 }
 
-.logo {
-    height: 150px;
-}
-
 navigation {
-padding-top: 20px;
+    padding-top: 20px;
     float: right;
+    text-align: center;
 }
 
 button {
@@ -71,26 +69,39 @@ button {
     background-color: #ffffff;
 }
 
-.email {
+ .header .email {
     background-image: 
     linear-gradient(
       rgba(250, 18, 155, 0.7),
       rgba(250, 18, 155, 0.7)
     ),
     url(../images/feathers.png);
-     height: 150px;
-    padding: 10px;
+    
 }
 
-.email form {
-    margin: 0 auto;
-    white-space: nowrap   
-}
+ .header .email {
+        height: 150px;
+        padding: 10px;
+    }
 
+.form {
+        white-space: nowrap;
+        width:50%; 
+        margin:0 auto;
+    }
 .email p {
-    padding-bottom: -30px;
-    color: #ffffff;
+        padding-bottom: -15px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .email p {
+        padding-bottom: -30px;
+    }
 }
+
 
 .footer {
     background-image:
@@ -99,4 +110,18 @@ button {
       rgba(117, 219, 221, 0.8)
     ),
     url(../images/feathers.png);
+    padding: 20px;
+}
+
+.footer p {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.footer a {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 600;
+}
+
+.links {
+    width: 50%;
 }
