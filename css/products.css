@@ -1,0 +1,110 @@
+.work-items {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.product-detail h4 {
+    font-size: 14px;
+    color: #2D2D2D;
+    letter-spacing: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.product-detail p {
+    font-weight: bolder;
+    font-size: 14px;
+    color: #FA129B;
+    letter-spacing: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.work-items li {
+  float: left;
+  padding: 0 20px;
+}
+
+/*
+.search li:nth-child(3n+1) {
+  clear: both;
+}
+*/
+
+.sidebar, .products {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.sidebar {
+    background-color: rgba(230, 230, 230, 0.7);
+    padding-top: 10px;
+}
+
+@media (max-width: 549px){
+    .products {
+        margin-left: 10px;
+        padding-left: 0px;
+    }
+    
+    .work-items li {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
+    .work-items li:nth-child(2n){
+        float: left;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 470px){
+     .work-items li:nth-child(2n){
+        float: left;
+        padding-left: 0px;
+    }
+}
+
+.sidebar label {
+  float: left;
+  padding-left: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  float: left;
+}
+.sidebar ul input{
+    float:left;
+    vertical-align: bottom;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.sidebar li {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.sidebar h5 {
+    font-weight: 800;
+    font-size: 14px;
+    color: #2D2D2D;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    position: relative;
+}
+
+
+/* Main div for border to extend to 50% from bottom left corner */
+.sidebar h5:after {
+  content:""; 
+  background: #9B9B9B; 
+  position: absolute; 
+  top: 22px; 
+  left: 10px; 
+  height: 4px; 
+  width: 90%;
+}
