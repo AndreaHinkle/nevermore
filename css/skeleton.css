@@ -406,10 +406,37 @@ there.
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    .mobile-header {
+        display: none;
+    }
+}
+
+@media (max-width: 549px) {
+    .desktop-header {
+        display: none;
+    }
+    .cart {
+        margin-left: 20px;
+    }
+    
+    .products {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .inner {
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+}
+
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .email p {
+        padding-bottom: -30px;
+    }
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}

@@ -30,9 +30,19 @@ background: #75DBDD;
     color: rgba(255, 255, 255, 0.87);
 }
 
-.header {
+.header, mobile-header {
     height: 150px;
 
+}
+
+.mobile-header {
+    background-image: 
+    linear-gradient(
+      rgba(250, 18, 155, 0.7),
+      rgba(250, 18, 155, 0.7)
+    ),
+    url(../images/feathers.png);
+    padding-top: 20px;
 }
 
 .logo {
@@ -51,32 +61,21 @@ navigation {
 
 button {
     background-color: #FFEA65;
-    font-size: 18px;
-    letter-spacing: 1.28px;
-    line-height: 20px;
-    margin-left: 20px;
-}
-
-.button-header {
-    background-color: #FFEA65;
     font-size: 16px;
     line-height: 20px;
     margin-left: -5px;
     padding: 0px 10px;
 }
 
-.whitebg{
-    background-color: #ffffff;
-}
 
  .header .email {
+     background-color: #ffffff;
     background-image: 
     linear-gradient(
       rgba(250, 18, 155, 0.7),
       rgba(250, 18, 155, 0.7)
     ),
     url(../images/feathers.png);
-    
 }
 
  .header .email {
@@ -86,21 +85,18 @@ button {
 
 .form {
         white-space: nowrap;
-        width:50%; 
+        width:90%; 
         margin:0 auto;
     }
+form {
+    width: 90%;
+}
+
 .email p {
         padding-bottom: -15px;
         color: #ffffff;
         text-align: center;
     }
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-    .email p {
-        padding-bottom: -30px;
-    }
-}
 
 
 .footer {
@@ -124,4 +120,21 @@ button {
 
 .links {
     width: 50%;
+}
+
+.nudge-right {
+    margin-left: 20px;
+}
+
+.nudge-left {
+    margin-right: 20px;
+}
+
+.nudge-down {
+    margin-top: 20px;
+}
+
+i {
+    font-family: FontAwesome;
+    font-size: 22px;
 }

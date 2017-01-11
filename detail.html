@@ -23,13 +23,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-</head>
+</head>   
 <body>
 
   <!-- Primary Page Layout
@@ -72,31 +73,77 @@
     </div>
 </div>
     
-<div class="section hero">
+    
+    
+<div class="section search">
     <div class="container">
     <div class="row">
-        <a href="search.html">
-          <img class="u-max-full-width" src="images/FreshPicks.jpg">
-        </a>
+        <div class="three columns sidebar">
+            <h5>TYPE</h5>
+            <ul>
+                <li class="u-cf"><input type="checkbox"><label> Mens</label></li>
+                <li class="u-cf"><input type="checkbox"><label> Womens</label></li>
+            </ul>
+            <h5>STYLE</h5>
+            <ul>
+                <li class="u-cf"><input type="checkbox"><label>Shirts</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Hoodies</label></li>
+            </ul>
+            <h5>SIZE</h5>
+            <ul>
+                <li class="u-cf"><input type="checkbox"><label>Small</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Medium</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Large</label></li>
+                <li class="u-cf"><input type="checkbox"><label>XL</label></li>
+            </ul>
+            
+            <h5>CATEGORY</h5>
+            <ul>
+                <li class="u-cf"><input type="checkbox"><label>Literary</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Movies</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Television</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Science</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Typographic</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Artistic</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Funny</label></li>
+                <li class="u-cf"><input type="checkbox"><label>Animals</label></li>
+            </ul>
+        </div>
+        
+        <div class="six columns products">
+             <img src="http://placehold.it/600x600" class="u-max-full-width">
+        </div>
+        
+        <div class="three columns products info">
+            
+             <div class="product-detail">
+                <h3><span class="price">$15</span> &ldquo;Owl Night Long&rdquo;</h3>
+                <p>Figure flattering and fab, our womens tee features a fitted silhouette and complimentary neckline. Its versatile and comfy look is perfect for stylin' up, stylin' down, or stylin' any super cool outfit.</p>
+            </div>
+            <div>
+              <select class="u-full-width" id="sizes">
+                <option value="Option 1">Small</option>
+                <option value="Option 2">Mediumn</option>
+                <option value="Option 3">Large</option>
+                <option value="Option 4">Extra Large</option>
+              </select>
+            </div>
+            <a href="#">View Sizing Chart</a>
+            <button class="nudge-down cart">Add to Cart <i class="fa-cart-plus"></i></button>
+                        
+        </div>
+          
+        </div>        
+            
+          
+              
+          
+        </div>
     </div>
   </div>
 </div>
     
-<div class="section landing-thumb">
-    <div class="container">
-    <div class="row">
-      <div class="one-third column">
-          <a href="search.html"><img class="u-max-full-width" src="images/ShopMens.png"></a>
-      </div>
-      <div class="one-third column">
-          <a href="search.html"><img class="u-max-full-width" src="images/ShopWomens.png"></a>
-      </div>
-        <div class="one-third column">
-          <a href="search.html"><img class="u-max-full-width" src="images/OnSale.png"></a>
-      </div>
-    </div>
-  </div>
-</div>
+
     
 <div class="section footer">
     <div class="container">
@@ -126,6 +173,7 @@
                 <div class="form">
                     <form>
                           <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                            
                     </form>
                 </div>
             </div>
