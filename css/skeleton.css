@@ -403,21 +403,39 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    .form {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .form {
+        padding-left: 50px;
+    }
+}
+
+
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-    .mobile-header {
+    .mobile-header, .topnav {
         display: none;
     }
+      .form {
+        padding-left: 10px;
+    }
+    
+    form {width: 30%;}
+    
+    
+    
+    
 }
 
 @media (max-width: 549px) {
     .desktop-header {
         display: none;
-    }
-    .cart {
-        margin-left: 20px;
     }
     
     .products {
@@ -428,6 +446,11 @@ there.
         margin-top: 0px;
         padding-left: 0px;
     }
+    
+    .sidebar {
+        display: none;
+    }
+    
 }
 
 
@@ -436,10 +459,19 @@ there.
     .email p {
         padding-bottom: -30px;
     }
+    .form {
+        padding-left: 10px;
+    }
+    
+    
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+        .form {
+        padding-left: 25px;
+    }
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}

@@ -85,12 +85,14 @@ button {
 
 .form {
         white-space: nowrap;
-        width:90%; 
         margin:0 auto;
     }
+
+
 form {
-    width: 90%;
+    width: 75%;
 }
+
 
 .email p {
         padding-bottom: -15px;
@@ -107,6 +109,7 @@ form {
     ),
     url(../images/feathers.png);
     padding: 20px;
+    margin-top: 20px;
 }
 
 .footer p {

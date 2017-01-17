@@ -102,80 +102,126 @@
     <div class="section cart">
     <div class="container">
     <div class="row">
-        <div class="twelve column"><h2>All Shirts</h2><button class="nudge-down cart" onclick="location.href='checkout.html'">Checkout <i class="fa-cart-plus"></i></button></div>
+        <div class="twelve column"><h2>Checkout</h2><button class="nudge-down cart" onclick="location.href='checkout.html'">Checkout <i class="fa-cart-plus"></i></button></div>
         
     </div>
 </div>
 </div>
     
-<div class="section search">
+<div class="section checkout">
     <div class="container">
-    <div class="row">
+        <div class="row">
         
-        <div class="three columns sidebar">
-            <h5>TYPE</h5>
-            <ul>
-                <li class="u-cf"><input type="checkbox"><label> Mens</label></li>
-                <li class="u-cf"><input type="checkbox"><label> Womens</label></li>
-            </ul>
-            <h5>STYLE</h5>
-            <ul>
-                <li class="u-cf"><input type="checkbox"><label>Shirts</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Hoodies</label></li>
-            </ul>
-            <h5>SIZE</h5>
-            <ul>
-                <li class="u-cf"><input type="checkbox"><label>Small</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Medium</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Large</label></li>
-                <li class="u-cf"><input type="checkbox"><label>XL</label></li>
-            </ul>
-            
-            <h5>CATEGORY</h5>
-            <ul>
-                <li class="u-cf"><input type="checkbox"><label>Literary</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Movies</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Television</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Science</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Typographic</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Artistic</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Funny</label></li>
-                <li class="u-cf"><input type="checkbox"><label>Animals</label></li>
-            </ul>
-        </div>
-        
-        <div class="six columns products">
-             <img src="images/shirt.jpg" class="u-max-full-width">
-        </div>
-        
-        <div class="three columns products info">
-            
-             <div class="product-detail">
-                <h3><span class="price">$15</span> &ldquo;Owl Night Long&rdquo;</h3>
-                <p>Figure flattering and fab, our womens tee features a fitted silhouette and complimentary neckline. Its versatile and comfy look is perfect for stylin' up, stylin' down, or stylin' any super cool outfit.</p>
+            <div class="one-half column">
+                <h5>Shipping Info</h5>
+                <form>
+                    <input class="u-full-width" type="Name" placeholder="Name" id="name">
+                    <input class="u-full-width" type="street" placeholder="Street Address" id="street">
+                    <input class="u-full-width" type="city" placeholder="City" id="city">
+                  <select class="u-full-width" id="exampleRecipientInput">
+                    <option value="Option 1">State</option>
+                    <option value="Option 2">CA</option>
+                    <option value="Option 3">MO</option>
+                    <option value="Option 3">NY</option>
+                  </select>
+                    <input class="u-full-width" type="zip" placeholder="Zip Code" id="zip">
+                </form>
+                <h5>Payment Method</h5>
+                    <button><i class="fa-credit-card"></i></button>
+                    <button><i class="fa-cc-paypal"></i></button>
+                    <button><i class="fa-amazon"></i></button>
+                <p>&nbsp;</p>
+                <h5>Card Info</h5>
+                <form>
+                    <input class="u-full-width" type="Name" placeholder="Name (as it appears on card)" id="name">
+                    <input class="u-full-width" type="cardnumber" placeholder="Credit card number" id="cardnumber">
+                    
+                  <select class="u-full-width" id="exampleRecipientInput">
+                    <option value="Option 1">Expiration month</option>
+                    <option value="Option 2">Jan<option>
+                    <option value="Option 3">Feb</option>
+                    <option value="Option 4">Mar</option>
+                    <option value="Option 5">Apr</option>
+                    <option value="Option 6">May</option>
+                    <option value="Option 7">Jun</option>
+                  </select>
+                    
+                    <select class="u-full-width" id="exampleRecipientInput">
+                    <option value="Option 1">Expiration year</option>
+                    <option value="Option 2">2017</option>
+                    <option value="Option 3">2018</option>
+                    <option value="Option 3">2019</option>
+                    <option value="Option 4">2020</option>
+                  </select>
+                    
+                    <input class="u-full-width" type="code" placeholder="Security code" id="code">
+                </form>
+                <h5>Billing Address</h5>
+                <ul>
+                    <li class="u-cf"><input type="checkbox"><label> Same as shipping address</label></li>
+                </ul>
+                <form>
+                    <input class="u-full-width" type="Name" placeholder="Name" id="name">
+                    <input class="u-full-width" type="street" placeholder="Street Address" id="street">
+                    <input class="u-full-width" type="city" placeholder="City" id="city">
+                  <select class="u-full-width" id="exampleRecipientInput">
+                    <option value="Option 1">State</option>
+                    <option value="Option 2">CA</option>
+                    <option value="Option 3">MO</option>
+                    <option value="Option 3">NY</option>
+                  </select>
+                    <input class="u-full-width" type="zip" placeholder="Zip Code" id="zip">
+                    <button class="u-max-full-width">Place Order</button> 
+                </form>
+                
             </div>
-            <div>
-              <select class="u-full-width" id="sizes">
-                <option value="Option 1">Small</option>
-                <option value="Option 2">Mediumn</option>
-                <option value="Option 3">Large</option>
-                <option value="Option 4">Extra Large</option>
-              </select>
+            <div class="one-half column">
+                <h5>Your Cart</h5>
+                <div class="cart-edit">
+                    <table>
+                          <thead>
+                            <tr>
+                              <th>Item</th>
+                              <th>Size</th>
+                              <th>#</th>
+                              <th>Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><img src="images/shirt.jpg" class="u-max-full-width"></td>
+                              <td>M</td>
+                              <td>1</td>
+                              <td class="price">$15</td>
+                            </tr>
+                            <tr>
+                              <td><img src="images/shirt.jpg" class="u-max-full-width"></td>
+                              <td>M</td>
+                              <td>1</td>
+                              <td class="price">$15</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    <div class="cart-total">
+                        <table class="u-full-width">
+
+                          <tbody>
+                            <tr>
+                                <td><button>Update Cart</button></td>
+                              <td><p>Total: $30</p></td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+                
             </div>
-            <a href="#">View Sizing Chart</a>
-            <button class="nudge-down cart">Add to Cart <i class="fa-cart-plus"></i></button>
-                        
         </div>
-          
-        </div>        
-            
-          
-              
-          
-        </div>
-    </div>
-  </div>
+     </div>                        
 </div>
+
+
     
 
     
